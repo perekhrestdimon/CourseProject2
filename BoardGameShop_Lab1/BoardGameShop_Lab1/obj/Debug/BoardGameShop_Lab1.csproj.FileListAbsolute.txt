@@ -1,0 +1,14 @@
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.csproj.AssemblyReference.cache
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.Form1.resources
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.Properties.Resources.resources
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.csproj.GenerateResource.cache
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\bin\Debug\BoardGameShop_Lab1.exe.config
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\bin\Debug\BoardGameShop_Lab1.exe
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\bin\Debug\BoardGameShop_Lab1.pdb
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.exe
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.pdb
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.exe.config
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.PublisherGamesForm.resources
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.ClientsForm.resources
+C:\Users\perek\source\repos\BoardGameShop_Lab1\BoardGameShop_Lab1\obj\Debug\BoardGameShop_Lab1.CartForm.resources
