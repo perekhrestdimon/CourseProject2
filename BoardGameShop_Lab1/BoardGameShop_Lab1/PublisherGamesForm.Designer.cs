@@ -73,7 +73,7 @@
             // publisher_idLabel
             // 
             publisher_idLabel.AutoSize = true;
-            publisher_idLabel.Location = new System.Drawing.Point(36, 100);
+            publisher_idLabel.Location = new System.Drawing.Point(15, 94);
             publisher_idLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             publisher_idLabel.Name = "publisher_idLabel";
             publisher_idLabel.Size = new System.Drawing.Size(129, 25);
@@ -84,12 +84,13 @@
             // publisher_nameLabel
             // 
             publisher_nameLabel.AutoSize = true;
-            publisher_nameLabel.Location = new System.Drawing.Point(36, 150);
+            publisher_nameLabel.Location = new System.Drawing.Point(380, 94);
             publisher_nameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             publisher_nameLabel.Name = "publisher_nameLabel";
             publisher_nameLabel.Size = new System.Drawing.Size(165, 25);
             publisher_nameLabel.TabIndex = 3;
             publisher_nameLabel.Text = "publisher name:";
+            publisher_nameLabel.Click += new System.EventHandler(this.publisher_nameLabel_Click);
             // 
             // boardGameShop_LabDataSet
             // 
@@ -151,7 +152,7 @@
             this.publishersBindingNavigator.Name = "publishersBindingNavigator";
             this.publishersBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.publishersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.publishersBindingNavigator.Size = new System.Drawing.Size(1600, 42);
+            this.publishersBindingNavigator.Size = new System.Drawing.Size(1120, 50);
             this.publishersBindingNavigator.TabIndex = 0;
             this.publishersBindingNavigator.Text = "bindingNavigator1";
             this.publishersBindingNavigator.RefreshItems += new System.EventHandler(this.publishersBindingNavigator_RefreshItems);
@@ -162,13 +163,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 36);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(70, 44);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -178,7 +179,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -187,7 +188,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -196,13 +197,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -217,7 +218,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 50);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -225,7 +226,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -234,28 +235,28 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 36);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(46, 44);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 42);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 50);
             // 
             // publishersBindingNavigatorSaveItem
             // 
             this.publishersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.publishersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("publishersBindingNavigatorSaveItem.Image")));
             this.publishersBindingNavigatorSaveItem.Name = "publishersBindingNavigatorSaveItem";
-            this.publishersBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 36);
+            this.publishersBindingNavigatorSaveItem.Size = new System.Drawing.Size(46, 44);
             this.publishersBindingNavigatorSaveItem.Text = "Save Data";
             this.publishersBindingNavigatorSaveItem.Click += new System.EventHandler(this.publishersBindingNavigatorSaveItem_Click);
             // 
             // publisher_idTextBox
             // 
             this.publisher_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.publishersBindingSource, "publisher_id", true));
-            this.publisher_idTextBox.Location = new System.Drawing.Point(210, 94);
-            this.publisher_idTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.publisher_idTextBox.Location = new System.Drawing.Point(156, 91);
+            this.publisher_idTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.publisher_idTextBox.Name = "publisher_idTextBox";
             this.publisher_idTextBox.Size = new System.Drawing.Size(196, 31);
             this.publisher_idTextBox.TabIndex = 2;
@@ -263,8 +264,8 @@
             // publisher_nameTextBox
             // 
             this.publisher_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.publishersBindingSource, "publisher_name", true));
-            this.publisher_nameTextBox.Location = new System.Drawing.Point(210, 144);
-            this.publisher_nameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.publisher_nameTextBox.Location = new System.Drawing.Point(557, 88);
+            this.publisher_nameTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.publisher_nameTextBox.Name = "publisher_nameTextBox";
             this.publisher_nameTextBox.Size = new System.Drawing.Size(196, 31);
             this.publisher_nameTextBox.TabIndex = 4;
@@ -276,6 +277,9 @@
             // 
             // gamesDataGridView
             // 
+            this.gamesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gamesDataGridView.AutoGenerateColumns = false;
             this.gamesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gamesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -285,8 +289,8 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.gamesDataGridView.DataSource = this.gamesBindingSource;
-            this.gamesDataGridView.Location = new System.Drawing.Point(74, 231);
-            this.gamesDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gamesDataGridView.Location = new System.Drawing.Point(15, 176);
+            this.gamesDataGridView.Margin = new System.Windows.Forms.Padding(6);
             this.gamesDataGridView.Name = "gamesDataGridView";
             this.gamesDataGridView.RowHeadersWidth = 82;
             this.gamesDataGridView.Size = new System.Drawing.Size(1084, 423);
@@ -335,10 +339,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(74, 692);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Location = new System.Drawing.Point(795, 85);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(310, 44);
+            this.button1.Size = new System.Drawing.Size(304, 48);
             this.button1.TabIndex = 6;
             this.button1.Text = "Підтвердити зміни";
             this.button1.UseVisualStyleBackColor = true;
@@ -348,7 +352,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(1120, 615);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.gamesDataGridView);
             this.Controls.Add(publisher_idLabel);
@@ -356,9 +360,10 @@
             this.Controls.Add(publisher_nameLabel);
             this.Controls.Add(this.publisher_nameTextBox);
             this.Controls.Add(this.publishersBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MinimumSize = new System.Drawing.Size(1146, 686);
             this.Name = "PublisherGamesForm";
-            this.Text = "PublisherGamesForm";
+            this.Text = "Видавці Ігор";
             this.Load += new System.EventHandler(this.PublisherGamesForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publishersBindingSource)).EndInit();

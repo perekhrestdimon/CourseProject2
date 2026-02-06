@@ -30,12 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientsForm));
-            this.boardGameShop_LabDataSet = new BoardGameShop_Lab1.BoardGameShop_LabDataSet();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientsTableAdapter = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.ClientsTableAdapter();
-            this.tableAdapterManager = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.TableAdapterManager();
             this.clientsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.boardGameShop_LabDataSet = new BoardGameShop_Lab1.BoardGameShop_LabDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -56,40 +54,14 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            this.clientsTableAdapter = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.ClientsTableAdapter();
+            this.tableAdapterManager = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingNavigator)).BeginInit();
             this.clientsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // boardGameShop_LabDataSet
-            // 
-            this.boardGameShop_LabDataSet.DataSetName = "BoardGameShop_LabDataSet";
-            this.boardGameShop_LabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.boardGameShop_LabDataSet;
-            // 
-            // clientsTableAdapter
-            // 
-            this.clientsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CategoriesTableAdapter = null;
-            this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
-            this.tableAdapterManager.Game_CategoriesTableAdapter = null;
-            this.tableAdapterManager.Game_MechanicsTableAdapter = null;
-            this.tableAdapterManager.GamesTableAdapter = null;
-            this.tableAdapterManager.MechanicsTableAdapter = null;
-            this.tableAdapterManager.Order_ItemsTableAdapter = null;
-            this.tableAdapterManager.OrdersTableAdapter = null;
-            this.tableAdapterManager.PublishersTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // clientsBindingNavigator
             // 
@@ -118,7 +90,7 @@
             this.clientsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.clientsBindingNavigator.Name = "clientsBindingNavigator";
             this.clientsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.clientsBindingNavigator.Size = new System.Drawing.Size(1704, 42);
+            this.clientsBindingNavigator.Size = new System.Drawing.Size(1710, 42);
             this.clientsBindingNavigator.TabIndex = 0;
             this.clientsBindingNavigator.Text = "bindingNavigator1";
             this.clientsBindingNavigator.RefreshItems += new System.EventHandler(this.clientsBindingNavigator_RefreshItems);
@@ -131,6 +103,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(46, 36);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.boardGameShop_LabDataSet;
+            // 
+            // boardGameShop_LabDataSet
+            // 
+            this.boardGameShop_LabDataSet.DataSetName = "BoardGameShop_LabDataSet";
+            this.boardGameShop_LabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -220,7 +202,12 @@
             // 
             // clientsDataGridView
             // 
+            this.clientsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.clientsDataGridView.AutoGenerateColumns = false;
+            this.clientsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.clientsDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.clientsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.clientsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -236,7 +223,7 @@
             this.clientsDataGridView.Name = "clientsDataGridView";
             this.clientsDataGridView.RowHeadersWidth = 82;
             this.clientsDataGridView.RowTemplate.Height = 33;
-            this.clientsDataGridView.Size = new System.Drawing.Size(1684, 480);
+            this.clientsDataGridView.Size = new System.Drawing.Size(1365, 398);
             this.clientsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -246,7 +233,6 @@
             this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 200;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -254,7 +240,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "last_name";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -262,7 +247,6 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "first_name";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -270,7 +254,6 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "middle_name";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 200;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -278,7 +261,6 @@
             this.dataGridViewTextBoxColumn5.HeaderText = "phone_number";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 200;
             // 
             // dataGridViewTextBoxColumn6
             // 
@@ -286,7 +268,6 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "email";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 200;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -294,7 +275,6 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "password_hash";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 200;
             // 
             // dataGridViewTextBoxColumn8
             // 
@@ -302,23 +282,41 @@
             this.dataGridViewTextBoxColumn8.HeaderText = "registration_date";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 10;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 200;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
+            this.tableAdapterManager.Game_CategoriesTableAdapter = null;
+            this.tableAdapterManager.Game_MechanicsTableAdapter = null;
+            this.tableAdapterManager.GamesTableAdapter = null;
+            this.tableAdapterManager.MechanicsTableAdapter = null;
+            this.tableAdapterManager.Order_ItemsTableAdapter = null;
+            this.tableAdapterManager.OrdersTableAdapter = null;
+            this.tableAdapterManager.PublishersTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // ClientsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1704, 537);
+            this.ClientSize = new System.Drawing.Size(1710, 496);
             this.Controls.Add(this.clientsDataGridView);
             this.Controls.Add(this.clientsBindingNavigator);
+            this.MinimumSize = new System.Drawing.Size(1736, 567);
             this.Name = "ClientsForm";
-            this.Text = "ClientsForm";
+            this.Text = "Клієнти";
             this.Load += new System.EventHandler(this.ClientsForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingNavigator)).EndInit();
             this.clientsBindingNavigator.ResumeLayout(false);
             this.clientsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

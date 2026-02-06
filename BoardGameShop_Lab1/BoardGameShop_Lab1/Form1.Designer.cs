@@ -32,17 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.databaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.publishersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gamesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.видавціТаІгриToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редакторЗапитівToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.клієнтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.правкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.додатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редагуватиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.видалитиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.статистикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.publisheridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publishernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publishersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.boardGameShopLabDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.boardGameShop_LabDataSet = new BoardGameShop_Lab1.BoardGameShop_LabDataSet();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -61,16 +60,25 @@
             this.gamesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cmbSort = new System.Windows.Forms.ComboBox();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.btnResetFilter = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbTableSelect = new System.Windows.Forms.ComboBox();
+            this.замовленняToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.boardGameShopLabDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.boardGameShop_LabDataSet = new BoardGameShop_Lab1.BoardGameShop_LabDataSet();
+            this.publisher_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publishernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publishersTableAdapter = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.PublishersTableAdapter();
             this.gamesTableAdapter = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.GamesTableAdapter();
             this.categoriesTableAdapter = new BoardGameShop_Lab1.BoardGameShop_LabDataSetTableAdapters.CategoriesTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publishersBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boardGameShopLabDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.publishersBindingSource)).BeginInit();
@@ -78,6 +86,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gamesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boardGameShopLabDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -86,45 +96,25 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.databaseToolStripMenuItem,
-            this.клієнтиToolStripMenuItem});
+            this.клієнтиToolStripMenuItem,
+            this.правкаToolStripMenuItem,
+            this.статистикаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1600, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1494, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // databaseToolStripMenuItem
             // 
             this.databaseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.publishersToolStripMenuItem,
-            this.gamesToolStripMenuItem,
-            this.categoriesToolStripMenuItem,
-            this.видавціТаІгриToolStripMenuItem});
+            this.видавціТаІгриToolStripMenuItem,
+            this.редакторЗапитівToolStripMenuItem,
+            this.замовленняToolStripMenuItem});
             this.databaseToolStripMenuItem.Name = "databaseToolStripMenuItem";
-            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(132, 36);
-            this.databaseToolStripMenuItem.Text = "Database";
+            this.databaseToolStripMenuItem.Size = new System.Drawing.Size(169, 36);
+            this.databaseToolStripMenuItem.Text = "Інструменти";
             this.databaseToolStripMenuItem.Click += new System.EventHandler(this.databaseToolStripMenuItem_Click);
-            // 
-            // publishersToolStripMenuItem
-            // 
-            this.publishersToolStripMenuItem.Name = "publishersToolStripMenuItem";
-            this.publishersToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.publishersToolStripMenuItem.Text = "Publishers";
-            this.publishersToolStripMenuItem.Click += new System.EventHandler(this.publishersToolStripMenuItem_Click);
-            // 
-            // gamesToolStripMenuItem
-            // 
-            this.gamesToolStripMenuItem.Name = "gamesToolStripMenuItem";
-            this.gamesToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.gamesToolStripMenuItem.Text = "Games";
-            this.gamesToolStripMenuItem.Click += new System.EventHandler(this.gamesToolStripMenuItem_Click);
-            // 
-            // categoriesToolStripMenuItem
-            // 
-            this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
-            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.categoriesToolStripMenuItem.Text = "Categories";
-            this.categoriesToolStripMenuItem.Click += new System.EventHandler(this.categoriesToolStripMenuItem_Click);
             // 
             // видавціТаІгриToolStripMenuItem
             // 
@@ -133,6 +123,13 @@
             this.видавціТаІгриToolStripMenuItem.Text = "\"Видавці та Ігри\"";
             this.видавціТаІгриToolStripMenuItem.Click += new System.EventHandler(this.видавціТаІгриToolStripMenuItem_Click);
             // 
+            // редакторЗапитівToolStripMenuItem
+            // 
+            this.редакторЗапитівToolStripMenuItem.Name = "редакторЗапитівToolStripMenuItem";
+            this.редакторЗапитівToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.редакторЗапитівToolStripMenuItem.Text = "Редактор запитів";
+            this.редакторЗапитівToolStripMenuItem.Click += new System.EventHandler(this.редакторЗапитівToolStripMenuItem_Click);
+            // 
             // клієнтиToolStripMenuItem
             // 
             this.клієнтиToolStripMenuItem.Name = "клієнтиToolStripMenuItem";
@@ -140,53 +137,68 @@
             this.клієнтиToolStripMenuItem.Text = "Клієнти";
             this.клієнтиToolStripMenuItem.Click += new System.EventHandler(this.клієнтиToolStripMenuItem_Click);
             // 
+            // правкаToolStripMenuItem
+            // 
+            this.правкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.додатиToolStripMenuItem,
+            this.редагуватиToolStripMenuItem,
+            this.видалитиToolStripMenuItem});
+            this.правкаToolStripMenuItem.Name = "правкаToolStripMenuItem";
+            this.правкаToolStripMenuItem.Size = new System.Drawing.Size(114, 36);
+            this.правкаToolStripMenuItem.Text = "Правка";
+            // 
+            // додатиToolStripMenuItem
+            // 
+            this.додатиToolStripMenuItem.Name = "додатиToolStripMenuItem";
+            this.додатиToolStripMenuItem.Size = new System.Drawing.Size(268, 44);
+            this.додатиToolStripMenuItem.Text = "Додати";
+            this.додатиToolStripMenuItem.Click += new System.EventHandler(this.додатиToolStripMenuItem_Click);
+            // 
+            // редагуватиToolStripMenuItem
+            // 
+            this.редагуватиToolStripMenuItem.Name = "редагуватиToolStripMenuItem";
+            this.редагуватиToolStripMenuItem.Size = new System.Drawing.Size(268, 44);
+            this.редагуватиToolStripMenuItem.Text = "Редагувати";
+            this.редагуватиToolStripMenuItem.Click += new System.EventHandler(this.редагуватиToolStripMenuItem_Click);
+            // 
+            // видалитиToolStripMenuItem
+            // 
+            this.видалитиToolStripMenuItem.Name = "видалитиToolStripMenuItem";
+            this.видалитиToolStripMenuItem.Size = new System.Drawing.Size(268, 44);
+            this.видалитиToolStripMenuItem.Text = "Видалити";
+            this.видалитиToolStripMenuItem.Click += new System.EventHandler(this.видалитиToolStripMenuItem_Click);
+            // 
+            // статистикаToolStripMenuItem
+            // 
+            this.статистикаToolStripMenuItem.Name = "статистикаToolStripMenuItem";
+            this.статистикаToolStripMenuItem.Size = new System.Drawing.Size(154, 36);
+            this.статистикаToolStripMenuItem.Text = "Статистика";
+            this.статистикаToolStripMenuItem.Click += new System.EventHandler(this.статистикаToolStripMenuItem_Click);
+            // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.publisheridDataGridViewTextBoxColumn,
+            this.publisher_id,
             this.publishernameDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.publishersBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 153);
+            this.dataGridView1.Location = new System.Drawing.Point(24, 163);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1552, 595);
+            this.dataGridView1.Size = new System.Drawing.Size(1449, 316);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // publisheridDataGridViewTextBoxColumn
-            // 
-            this.publisheridDataGridViewTextBoxColumn.DataPropertyName = "publisher_id";
-            this.publisheridDataGridViewTextBoxColumn.HeaderText = "publisher_id";
-            this.publisheridDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.publisheridDataGridViewTextBoxColumn.Name = "publisheridDataGridViewTextBoxColumn";
-            this.publisheridDataGridViewTextBoxColumn.ReadOnly = true;
-            this.publisheridDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // publishernameDataGridViewTextBoxColumn
-            // 
-            this.publishernameDataGridViewTextBoxColumn.DataPropertyName = "publisher_name";
-            this.publishernameDataGridViewTextBoxColumn.HeaderText = "publisher_name";
-            this.publishernameDataGridViewTextBoxColumn.MinimumWidth = 10;
-            this.publishernameDataGridViewTextBoxColumn.Name = "publishernameDataGridViewTextBoxColumn";
-            this.publishernameDataGridViewTextBoxColumn.Width = 200;
             // 
             // publishersBindingSource1
             // 
             this.publishersBindingSource1.DataMember = "Publishers";
             this.publishersBindingSource1.DataSource = this.boardGameShopLabDataSetBindingSource;
-            // 
-            // boardGameShopLabDataSetBindingSource
-            // 
-            this.boardGameShopLabDataSetBindingSource.DataSource = this.boardGameShop_LabDataSet;
-            this.boardGameShopLabDataSetBindingSource.Position = 0;
-            // 
-            // boardGameShop_LabDataSet
-            // 
-            this.boardGameShop_LabDataSet.DataSetName = "BoardGameShop_LabDataSet";
-            this.boardGameShop_LabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigator1
             // 
@@ -215,7 +227,7 @@
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1600, 42);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1494, 42);
             this.bindingNavigator1.TabIndex = 2;
             this.bindingNavigator1.Text = "bindingNavigator1";
             this.bindingNavigator1.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
@@ -342,6 +354,133 @@
             this.categoriesBindingSource.DataMember = "Categories";
             this.categoriesBindingSource.DataSource = this.boardGameShopLabDataSetBindingSource;
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Location = new System.Drawing.Point(24, 488);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 98);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Додати в кошик";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.Location = new System.Drawing.Point(217, 488);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(196, 100);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Кошик";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtSearch.Location = new System.Drawing.Point(449, 506);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(261, 31);
+            this.txtSearch.TabIndex = 6;
+            this.txtSearch.Tag = "";
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // cmbSort
+            // 
+            this.cmbSort.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSort.FormattingEnabled = true;
+            this.cmbSort.Items.AddRange(new object[] {
+            "Назва (А-Я)",
+            "Назва (Я-А)",
+            "Ціна (від дешевих)",
+            "Ціна (від дорогих)",
+            "Кількість (спочатку багато)"});
+            this.cmbSort.Location = new System.Drawing.Point(742, 504);
+            this.cmbSort.Name = "cmbSort";
+            this.cmbSort.Size = new System.Drawing.Size(269, 33);
+            this.cmbSort.TabIndex = 7;
+            this.cmbSort.SelectedIndexChanged += new System.EventHandler(this.cmbSort_SelectedIndexChanged);
+            // 
+            // btnFilter
+            // 
+            this.btnFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFilter.Location = new System.Drawing.Point(1060, 506);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(130, 52);
+            this.btnFilter.TabIndex = 8;
+            this.btnFilter.Text = "Фільтр";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // btnResetFilter
+            // 
+            this.btnResetFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnResetFilter.Location = new System.Drawing.Point(1251, 504);
+            this.btnResetFilter.Name = "btnResetFilter";
+            this.btnResetFilter.Size = new System.Drawing.Size(154, 52);
+            this.btnResetFilter.TabIndex = 9;
+            this.btnResetFilter.Text = "Скинути";
+            this.btnResetFilter.UseVisualStyleBackColor = true;
+            this.btnResetFilter.Click += new System.EventHandler(this.btnResetFilter_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 117);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(251, 31);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Оберіть таблицю:";
+            // 
+            // cmbTableSelect
+            // 
+            this.cmbTableSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTableSelect.FormattingEnabled = true;
+            this.cmbTableSelect.Items.AddRange(new object[] {
+            "Ігри",
+            "Видавці",
+            "Категорії"});
+            this.cmbTableSelect.Location = new System.Drawing.Point(361, 117);
+            this.cmbTableSelect.Name = "cmbTableSelect";
+            this.cmbTableSelect.Size = new System.Drawing.Size(186, 33);
+            this.cmbTableSelect.TabIndex = 11;
+            this.cmbTableSelect.SelectedIndexChanged += new System.EventHandler(this.cmbTableSelect_SelectedIndexChanged);
+            // 
+            // замовленняToolStripMenuItem
+            // 
+            this.замовленняToolStripMenuItem.Name = "замовленняToolStripMenuItem";
+            this.замовленняToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.замовленняToolStripMenuItem.Text = "Замовлення";
+            this.замовленняToolStripMenuItem.Click += new System.EventHandler(this.замовленняToolStripMenuItem_Click);
+            // 
+            // boardGameShopLabDataSetBindingSource
+            // 
+            this.boardGameShopLabDataSetBindingSource.DataSource = this.boardGameShop_LabDataSet;
+            this.boardGameShopLabDataSetBindingSource.Position = 0;
+            // 
+            // boardGameShop_LabDataSet
+            // 
+            this.boardGameShop_LabDataSet.DataSetName = "BoardGameShop_LabDataSet";
+            this.boardGameShop_LabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // publisher_id
+            // 
+            this.publisher_id.DataPropertyName = "publisher_id";
+            this.publisher_id.HeaderText = "publisher_id";
+            this.publisher_id.MinimumWidth = 10;
+            this.publisher_id.Name = "publisher_id";
+            this.publisher_id.ReadOnly = true;
+            // 
+            // publishernameDataGridViewTextBoxColumn
+            // 
+            this.publishernameDataGridViewTextBoxColumn.DataPropertyName = "publisher_name";
+            this.publishernameDataGridViewTextBoxColumn.HeaderText = "publisher_name";
+            this.publishernameDataGridViewTextBoxColumn.MinimumWidth = 10;
+            this.publishernameDataGridViewTextBoxColumn.Name = "publishernameDataGridViewTextBoxColumn";
+            // 
             // publishersTableAdapter
             // 
             this.publishersTableAdapter.ClearBeforeFill = true;
@@ -354,31 +493,17 @@
             // 
             this.categoriesTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(420, 757);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 98);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Додати в кошик";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(742, 757);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(196, 100);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Кошик";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(1494, 594);
+            this.Controls.Add(this.cmbTableSelect);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnResetFilter);
+            this.Controls.Add(this.btnFilter);
+            this.Controls.Add(this.cmbSort);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -387,16 +512,15 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MinimumSize = new System.Drawing.Size(919, 665);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Головне меню";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publishersBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boardGameShopLabDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -405,6 +529,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gamesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boardGameShopLabDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boardGameShop_LabDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,9 +540,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem databaseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem publishersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gamesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem categoriesToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
@@ -435,8 +558,6 @@
         private BoardGameShop_LabDataSet boardGameShop_LabDataSet;
         private System.Windows.Forms.BindingSource publishersBindingSource;
         private BoardGameShop_LabDataSetTableAdapters.PublishersTableAdapter publishersTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn publisheridDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn publishernameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource publishersBindingSource1;
         private System.Windows.Forms.BindingSource gamesBindingSource1;
         private System.Windows.Forms.BindingSource gamesBindingSource;
@@ -448,6 +569,21 @@
         private System.Windows.Forms.ToolStripMenuItem клієнтиToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ToolStripMenuItem редакторЗапитівToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem правкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem додатиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem редагуватиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem видалитиToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn publisher_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn publishernameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ComboBox cmbSort;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.Button btnResetFilter;
+        private System.Windows.Forms.ToolStripMenuItem статистикаToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbTableSelect;
+        private System.Windows.Forms.ToolStripMenuItem замовленняToolStripMenuItem;
     }
 }
 
